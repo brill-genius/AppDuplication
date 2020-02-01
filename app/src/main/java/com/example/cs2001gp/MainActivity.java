@@ -23,4 +23,14 @@ public class MainActivity extends AppCompatActivity {
         currentQnScore += 1;
         return currentQnScore;
     }
+
+    public static boolean isvalidBrunelEmail(String userEmail) {
+        //what if there is more than one or typo in the brunel email?
+        if( userEmail.contains("@brunel.ac.uk")){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }

@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static boolean isvalidBrunelEmail(String userEmail) {
-        //what if there is more than one or typo in the brunel email?
+        //what if there's more than one or typo in the brunel email?
         if( userEmail.contains("@brunel.ac.uk")){
             return true;
         }

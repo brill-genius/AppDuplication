@@ -10,6 +10,10 @@ import androidx.annotation.Nullable;
 import com.example.cs2001gp.R;
 
 public class ModulesActivity extends Activity {
+
+
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

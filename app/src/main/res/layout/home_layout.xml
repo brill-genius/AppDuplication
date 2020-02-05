@@ -15,9 +15,8 @@
         android:layout_gravity="center|top"
 
         android:text="Ask a question"
-        android:textStyle="bold"
         android:textSize="20sp"
-        />
+        android:textStyle="bold" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

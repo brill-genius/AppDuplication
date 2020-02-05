@@ -58,4 +58,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    public static boolean is7Char(String studentID) {
+        int studentIDLength = studentID.length();
+        if (studentIDLength == 7 ) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }

@@ -26,5 +26,9 @@ public class QuestionsPage0 extends AppCompatActivity {
         bt = (Button)findViewById(R.id.Submitbtn);
         lv = (ListView)findViewById(R.id.Questionlv);
 
+        arraylist = new ArrayList<String>();
+        Adapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_list_item_1,
+                arraylist);
+
     }
 }

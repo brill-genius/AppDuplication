@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static boolean is7Char(String studentID) {
+        //checks for student ID
         int studentIDLength = studentID.length();
         if (studentIDLength == 7 ) {
             return true;
@@ -68,4 +69,19 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     }
+
+    public static boolean isNumeric(String strNum) {
+        //check student number
+        if (strNum == null) {
+            return false;
+        }
+        try {
+            int studentIDint = Integer.parseInt(strNum);
+        }
+        catch(NumberFormatException nfe){
+            return false;
+        }
+        return true;
+    }
+
 }

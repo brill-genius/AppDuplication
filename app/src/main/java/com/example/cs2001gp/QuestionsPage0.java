@@ -3,6 +3,7 @@ package com.example.cs2001gp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,8 +28,23 @@ public class QuestionsPage0 extends AppCompatActivity {
         lv = (ListView)findViewById(R.id.Questionlv);
 
         arraylist = new ArrayList<String>();
-        Adapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_list_item_1,
+        Adapter = new ArrayAdapter<String>(QuestionsPage0.this,android.R.layout.simple_list_item_1,
                 arraylist);
 
+
+        lv.setAdapter(Adapter);
+
+
+        //public void onBtnClick
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String result = et.getText().toString().trim();
+                arraylist.add(result);
+                Adapter.notifyDataSetChanged();
+
     }
+});
+    };
+
 }

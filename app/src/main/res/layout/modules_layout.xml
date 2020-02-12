@@ -17,6 +17,12 @@
         android:textSize="40sp"
         app:fontFamily="sans-serif-black" />
 
+    <TextView
+        android:id="@+id/modulesDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select a module to view its lectures."/>
+
 
 
     <Button
@@ -27,6 +33,7 @@
         android:layout_centerHorizontal="true"
         android:text="CS2001"
         android:textColor="#0A0A0A"
+        android:onClick="onCS2001Click"
         android:textSize="20sp" />
 
 

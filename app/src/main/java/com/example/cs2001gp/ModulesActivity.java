@@ -3,6 +3,7 @@ package com.example.cs2001gp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -28,5 +29,15 @@ public class ModulesActivity extends Activity {
         //findViewById(R.id.calling_activity_info_text_view);
 
         //callingActivityMessage.append(" " + previousActivity);
+    }
+
+    public void onCS2001Click(View view) {
+
+        Intent getLecturesScreenIntent = new Intent(this,
+                LecturesActivity.class);
+
+        final int result = 1;
+
+        startActivityForResult(getLecturesScreenIntent, result);
     }
 }

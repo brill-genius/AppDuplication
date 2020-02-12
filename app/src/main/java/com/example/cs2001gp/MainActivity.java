@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
         CS2001_button = (Button) findViewById(R.id.CS2001_button);
         CS2001_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +28,18 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void onAskQuestionClick(View view){
+
+        Intent getModulesActivityIntent = new Intent(this,
+                ModulesActivity.class);
+
+        final int result = 1;
+
+        getModulesActivityIntent.putExtra("callingActivity","MainActivity");
+
+        startActivityForResult(getModulesActivityIntent, result);
+
+    }
     public void opencs2001()
     {
         Intent intent = new Intent(this, cs2001.class);

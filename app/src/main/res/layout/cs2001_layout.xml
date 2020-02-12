@@ -91,7 +91,7 @@
             android:layout_marginRight="-24dp"
             android:layout_marginBottom="385dp"
             android:layout_weight="1"
-            android:text="Year 2 Group Project"
+            android:text="Course Title"
             android:textColor="#0F0E0E"
             android:textSize="40sp"
             app:fontFamily="sans-serif-black" />

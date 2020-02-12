@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class QuestionsPage0 extends AppCompatActivity {
+public class QuestionsActivity extends AppCompatActivity {
     EditText et;
     Button bt;
     ListView lv;
@@ -21,14 +21,14 @@ public class QuestionsPage0 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_questions_page0);
+        setContentView(R.layout.questions_layout);
 
         et = (EditText)findViewById(R.id.Questiontxt);
         bt = (Button)findViewById(R.id.Submitbtn);
         lv = (ListView)findViewById(R.id.Questionlv);
 
         arraylist = new ArrayList<String>();
-        Adapter = new ArrayAdapter<String>(QuestionsPage0.this,android.R.layout.simple_list_item_1,
+        Adapter = new ArrayAdapter<String>(QuestionsActivity.this,android.R.layout.simple_list_item_1,
                 arraylist);
 
 

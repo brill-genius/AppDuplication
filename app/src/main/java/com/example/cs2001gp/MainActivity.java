@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         getModulesActivityIntent.putExtra("callingActivity","MainActivity");
 
-        startActivityForResult(getModulesActivityIntent, result);
+        startActivity(getModulesActivityIntent);
 
     }
     public void opencs2001()

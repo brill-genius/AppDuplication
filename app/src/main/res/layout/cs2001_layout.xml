@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -16,60 +16,7 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/courseTitle_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Year 2 Group Project"
-            android:textColor="#0F0E0E"
-            android:textSize="40sp"
-            app:fontFamily="sans-serif-black" />
-
-        <TextView
-            android:id="@+id/courseCode_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="CS2001"
-            android:textColor="#2C2727"
-            android:textSize="38sp"
-            app:fontFamily="sans-serif-black" />
     </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/enterQuestion_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enter your question below for your lecturer to respond"
-            android:textColor="#F5090808"
-            android:textSize="25dp" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <EditText
-            android:id="@+id/enterQuestion_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textSize="15dp" />
-    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -79,10 +26,122 @@
             android:id="@+id/publish_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginEnd="213dp"
+            android:layout_marginRight="213dp"
+            android:layout_marginBottom="167dp"
             android:text="Publish"
             android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/Backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="67dp"
+            android:layout_marginRight="67dp"
+            android:layout_marginBottom="171dp"
+            android:text="Back"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/enterQuestion_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="307dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:ems="10"
+            android:hint="Ask a Question!"
+            android:inputType="textPersonName"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/enterQuestion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/enterQuestion_edit_text"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="243dp"
+            android:text="Enter your question below for your lecturer to respond"
+            android:textColor="#F5090808"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/courseTitle_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="205dp"
+            android:layout_marginEnd="-24dp"
+            android:layout_marginRight="-24dp"
+            android:layout_marginBottom="385dp"
+            android:layout_weight="1"
+            android:text="Year 2 Group Project"
+            android:textColor="#0F0E0E"
+            android:textSize="40sp"
+            app:fontFamily="sans-serif-black" />
+
+        <TextView
+            android:id="@+id/courseCode_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="106dp"
+            android:layout_marginLeft="106dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:text="CS2001"
+            android:textColor="#2C2727"
+            android:textSize="38sp"
+            app:fontFamily="sans-serif-black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_marginBottom="-1dp">
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
     </RelativeLayout>
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+</RelativeLayout>
 

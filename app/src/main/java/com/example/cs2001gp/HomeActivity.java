@@ -14,17 +14,18 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_layout);
-    }
+        }
 
-    public void onAskQuestionClick(View view){
+public void onAskQuestionClick(View view){
 
         Intent getModulesActivityIntent = new Intent(this,
-                ModulesActivity.class);
+        ModulesActivity.class);
 
-        final int result = 1;
+final int result = 1;
 
         getModulesActivityIntent.putExtra("callingActivity","MainActivity");
 
         startActivityForResult(getModulesActivityIntent, result);
-    }
-}
+
+        }
+        }

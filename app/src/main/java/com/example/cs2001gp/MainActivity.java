@@ -27,7 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-            
+            CS2002_button = (Button) findViewById(R.id.CS2002_button);
+            CS2002_button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
         });
     }
 
@@ -48,7 +53,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, cs2001.class);
         startActivity(intent);
     }
-
+    public void opencs2002()
+        {
+            Intent intent = new Intent (this, opencs2002.class);
+            startActivity(intent);
+        }
 
 
 

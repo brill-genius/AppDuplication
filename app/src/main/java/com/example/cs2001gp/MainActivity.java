@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int likesCounter;
     private Button CS2001_button;
+    private Button CS2002_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
             }
+
+            
         });
     }
 

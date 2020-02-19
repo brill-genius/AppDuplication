@@ -22,19 +22,23 @@ public class MainActivity extends AppCompatActivity {
 
         CS2001_button = (Button) findViewById(R.id.CS2001_button);
         CS2001_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                                             @Override
+                                             public void onClick(View v) {
+
+                                             }
+                                         });
+
+
+            CS2002_button =(Button) findViewById(R.id.CS2002_button);
+            CS2002_button.setOnClickListener(new View.OnClickListener()
+
+            {
+                @Override
+                public void onClick (View v){
 
             }
-
-            CS2002_button = (Button) findViewById(R.id.CS2002_button);
-            CS2002_button.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                }
-        });
-    }
+            });
+        }
 
     public void onAskQuestionClick(View view){
 
@@ -55,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void opencs2002()
         {
-            Intent intent = new Intent (this, opencs2002.class);
+            Intent intent = new Intent (this, cs2002.class);
             startActivity(intent);
         }
 

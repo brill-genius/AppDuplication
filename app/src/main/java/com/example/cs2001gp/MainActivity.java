@@ -94,16 +94,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, cs2003.class);
         startActivity(intent);
     }
-
-
-
-
-//    public void opencs2002()
-  //  {
-    //    Intent intent = new Intent (this, cs2002.class);
-      //  startActivity(intent);
-    //}
     
+
+
     public void on_likebutton_click(View view){
         incrementLikes(likesCounter);
     }
@@ -114,6 +107,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public static boolean isvalidStudentID(String userEmail) {
+        if (isvalidBrunelEmail(userEmail) == false ) {
+            return false;
+        }
+
+        //splits student ID from email
+        //counts number of characters in the student ID
+        String[] parts = userEmail.split("\\@");
+        String studentID = parts[0];
+
+        boolean sevenChar, IDNumeric;
+        sevenChar = is7Char(studentID);
+        IDNumeric = isNumeric(studentID);
+
+        if((sevenChar == true) && (IDNumeric == true)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+
+    }
 
     public static boolean isvalidBrunelEmail(String userEmail) {
         //what if there's more than one or typo in the brunel email?

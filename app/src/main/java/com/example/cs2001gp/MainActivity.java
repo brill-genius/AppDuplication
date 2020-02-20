@@ -73,11 +73,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
-    public void opencs2002()
-    {
-        Intent intent = new Intent (this, cs2002.class);
-        startActivity(intent);
-    }
+//    public void opencs2002()
+  //  {
+    //    Intent intent = new Intent (this, cs2002.class);
+      //  startActivity(intent);
+    //}
 
 
 

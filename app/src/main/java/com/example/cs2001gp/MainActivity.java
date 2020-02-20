@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private int likesCounter;
     private Button CS2001_button;
     private Button CS2002_button;
+    private Button CS2003_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,29 +22,36 @@ public class MainActivity extends AppCompatActivity {
 
 
         CS2001_button = (Button) findViewById(R.id.CS2001_button);
-        CS2001_button.setOnClickListener(new View.OnClickListener() {
-                                             @Override
-                                             public void onClick(View v) {
-                                                 opencs2001();
+        CS2001_button.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v) {
+                    opencs2001();
 
-                                             }
-                                         });
-
-
-            CS2002_button =(Button) findViewById(R.id.CS2002_button);
-            CS2002_button.setOnClickListener(new View.OnClickListener()
-
+                }
+            });
+        
+        CS2002_button =(Button) findViewById(R.id.CS2002_button);
+        CS2002_button.setOnClickListener(new View.OnClickListener()
             {
                 @Override
                 public void onClick (View v){
                     opencs2002();
 
-            }
+                }
             });
 
+        CS2003_button = (Button) findViewById(R.id.CS2003_button);
+        CS2003_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                opencs2003();
 
-            //below this
+            }
+        });
 
+           //below this
 
 
 
@@ -72,6 +80,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent (this, cs2002.class);
             startActivity(intent);
         }
+    public void opencs2003()
+    {
+        Intent intent = new Intent (this, cs2003.class);
+        startActivity(intent);
+    }
+
 
 //    public void opencs2002()
   //  {

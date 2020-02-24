@@ -22,44 +22,44 @@ public class MainActivity extends AppCompatActivity {
 
 
         CS2001_button = (Button) findViewById(R.id.CS2001_button);
-        CS2001_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opencs2001();
+//        CS2001_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                opencs2001();
+//
+//            }
+//        });
 
-            }
-        });
+//        CS2002_button = (Button) findViewById(R.id.CS2002_button);
+//        CS2002_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                opencs2002();
+//
+//            }
+//        });
 
-        CS2002_button = (Button) findViewById(R.id.CS2002_button);
-        CS2002_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opencs2002();
-
-            }
-        });
-
-        CS2003_button = (Button) findViewById(R.id.CS2003_button);
-        CS2003_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opencs2003();
-
-            }
-        });
+//        CS2003_button = (Button) findViewById(R.id.CS2003_button);
+//        CS2003_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                opencs2003();
+//
+//            }
+//        });
 
         //below this
-        CS2005_button = (Button) findViewById(R.id.CS2005_button);
-        CS2005_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opencs2005();
-
-            }
-
-
-            //above this
-        });
+//        CS2005_button = (Button) findViewById(R.id.CS2005_button);
+//        CS2005_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                opencs2005();
+//
+//            }
+//
+//
+//            //above this
+//        });
     }
 
     public void onAskQuestionClick(View view) {
@@ -75,25 +75,25 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void opencs2001() {
-        Intent intent = new Intent(this, cs2001.class);
-        startActivity(intent);
-    }
-
-    public void opencs2002() {
-        Intent intent = new Intent(this, cs2002.class);
-        startActivity(intent);
-    }
-
-    public void opencs2003() {
-        Intent intent = new Intent(this, cs2003.class);
-        startActivity(intent);
-    }
-
-    public void opencs2005() {
-        Intent intent = new Intent(this, cs2003.class);
-        startActivity(intent);
-    }
+//    public void opencs2001() {
+//        Intent intent = new Intent(this, cs2001.class);
+//        startActivity(intent);
+//    }
+//
+//    public void opencs2002() {
+//        Intent intent = new Intent(this, cs2002.class);
+//        startActivity(intent);
+//    }
+//
+//    public void opencs2003() {
+//        Intent intent = new Intent(this, cs2003.class);
+//        startActivity(intent);
+//    }
+//
+//    public void opencs2005() {
+//        Intent intent = new Intent(this, cs2003.class);
+//        startActivity(intent);
+//    }
     
 
 

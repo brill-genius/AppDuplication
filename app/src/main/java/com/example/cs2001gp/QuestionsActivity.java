@@ -1,7 +1,9 @@
 package com.example.cs2001gp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -15,6 +17,7 @@ public class QuestionsActivity extends AppCompatActivity {
     EditText et;
     Button bt;
     ListView lv;
+    Button backbutton;
     ArrayList<String> arraylist;
     ArrayAdapter<String> Adapter;
 
@@ -23,12 +26,40 @@ public class QuestionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questions_layout);
 
-        et = (EditText)findViewById(R.id.Questiontxt);
-        bt = (Button)findViewById(R.id.Submitbtn);
-        lv = (ListView)findViewById(R.id.Questionlv);
+
+        backbutton = (Button) findViewById(R.id.BackBTN);
+
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent in = new Intent();
+                new Intent(QuestionsActivity.this, ModulesActivity.class);
+                startActivity(in);
+
+
+            }
+        });
+
+
+        //ActionBar actionBar = getSupportActionBar();
+        //actionBar.setTitle("Questions Activity");
+
+        //Button BackBTN = (Button)findViewById(R.id.BackBTN);
+        //BackBTN.setOnClickListener(new View.OnClickListener() {
+        //  @Override
+        //public void onClick(View v) {
+        // startActivity(new Intent(QuestionsActivity.this,ModulesActivity.class));
+        // }
+        //});
+
+        et = (EditText) findViewById(R.id.Questiontxt);
+        bt = (Button) findViewById(R.id.Submitbtn);
+        lv = (ListView) findViewById(R.id.Questionlv);
 
         arraylist = new ArrayList<String>();
-        Adapter = new ArrayAdapter<String>(QuestionsActivity.this,android.R.layout.simple_list_item_1,
+        Adapter = new ArrayAdapter<String>(QuestionsActivity.this, android.R.layout.simple_list_item_1,
                 arraylist);
 
 
@@ -43,8 +74,30 @@ public class QuestionsActivity extends AppCompatActivity {
                 arraylist.add(result);
                 Adapter.notifyDataSetChanged();
 
-    }
-});
-    };
+                //public void BackBTN(View view) {
 
-}
+                //startActivity(new Intent(QuestionsActivity.this,ModulesActivity.class));
+
+
+                // }
+
+            }
+        });
+
+
+    }
+
+    private void createBackButton() {
+
+        Button Next_button = (Button)findViewById(R.id.BackBTN);
+
+        Next_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(QuestionsActivity.this, LecturesActivity.class));
+
+            }
+
+        });
+        }}

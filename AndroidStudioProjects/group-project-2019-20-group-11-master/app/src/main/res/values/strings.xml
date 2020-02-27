@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CS2001GP</string>
+    <string name="like">Like</string>
+    <string name="Brunel_ID">Brunel_I</string>
+    <string name="prompt_password">Password</string>
+    <string name="promot_Brunel_ID">Brunel ID</string>
+    <string name="password">Password</string>
+</resources>
